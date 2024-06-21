@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="Img/Contacto 1.png" type="image/x-icon">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <ul>
+          <li><a href="../index.html" class="list-items">Inicio</a></li>
+         <!-- <li><a href="#" class="list-items">Services</a></li>
+          <li><a href="#" class="list-items">Team</a></li>
+          <li><a href="#" class="list-items">Contact</a></li>   -->
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <form action="https://formspree.io/f/xzzppplk" method="POST">
+        <label for="nombre">Tu nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="email">Tu correo electrónico:</label>
+        <input type="email" id="email" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Por favor, ingresa un correo electrónico válido">
+
+        <label for="message">Tu mensaje:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+
+      <div class="info-contacto">
+        <p>También puedes contactarme por email o a través de mis redes sociales:</p>
+        <ul>
+          <li>Email: <a href="aaronguzman3335@gmail.com">aaronguzman3335@gmail.com</a></li>
+         <!-- <li>LinkedIn: <a href="https://linkedin.com/tuperfil" target="_blank">linkedin.com/tuperfil</a></li>-->
+          <li>GitHub: <a href="https://github.com/AaronGuzmanSERVICE" target="_blank">https://github.com/AaronGuzmanSERVICE</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="derechos-reservados">
+      <p>Derechos reservados &copy; 2024 Aaron Guzman Hinojosa</p>
+    </section>
+  </main>
+
+</body>
+</html>

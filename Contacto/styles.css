@@ -1,0 +1,178 @@
+/* Reset básico y estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+/* Estilo para el scroll */
+::-webkit-scrollbar {
+    width: 8px; /* Ancho del scroll */
+    background-color: #0056b3; /* Color de fondo del scroll */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #4d88ff; /* Color del thumb (barra deslizante) */
+    border-radius: 10px; /* Borde redondeado del thumb */
+}
+
+header {
+    background-color: #d4d4d4; /* Color de fondo del header */
+    color: #fff;
+    padding: 8px 16px; /* Ajusta el padding según tu preferencia */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px; /* Ajusta la altura del header según tu preferencia */
+}
+
+header h1 {
+    font-size: 1.5rem; /* Reducir el tamaño del texto del título */
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row; /* Asegura que los elementos estén en línea horizontal */
+}
+
+nav ul li {
+    margin-right: 10px; /* Ajusta el espacio entre elementos */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+main {
+    margin-top: 20px;
+}
+
+section {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+.info-contacto {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.info-contacto p {
+    margin-bottom: 10px;
+}
+
+.info-contacto ul {
+    list-style-type: none;
+}
+
+.info-contacto ul li {
+    margin-bottom: 5px;
+}
+
+#derechos-reservados {
+    text-align: center;
+    margin-top: 40px;
+    padding: 10px;
+    background-color: #0056b3;
+    color: #fff;
+}
+
+/* Estilos específicos para elementos interactivos */
+.list-items {
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    font-size: 22px;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+.list-items:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transform: scaleY(2);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    border-top: 2px solid crimson;
+    border-bottom: 2px solid crimson;
+}
+
+.list-items:hover:before {
+    transform: scaleY(1.2);
+    opacity: 1;
+}
+
+.list-items:hover {
+    color: #fff;
+    transform: translateY(-3px);
+}
+
+.list-items:after {
+    content: "";
+    background: crimson;
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease;
+    transform: scale(0);
+    z-index: -1;
+}
+
+.list-items:hover:after {
+    transform: scale(1);
+}
